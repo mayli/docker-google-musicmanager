@@ -7,7 +7,7 @@ function google-musicmanager {
   if [[ $SPOOF_MAC == "false" ]]; then
     /usr/bin/google-musicmanager "$@"
   else
-    /usr/local/bin/macspoof -c 'default_application: [0xcf, 0x53, 0x83];' -- /usr/bin/google-musicmanager "$@"
+    /usr/local/bin/macspoof -c 'default_application: [0x4c, 0xcc, 0x6a];' -- /usr/bin/google-musicmanager "$@"
   fi
 }
 
